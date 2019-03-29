@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+    font-family: Comfortaa;
+    color:white;
+    font-size: 72px;
+    background-color: black;
+    position: relative;
+    z-index: 900;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: Comfortaa;
+    color:lightgreen;
+}
+
+p{
+    font-size: 20px;
+    font-family: Comfortaa;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+}
+
+.title {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+
+.title-image {
+    width:50%;
+    position: absolute;
+}
+
+.logo {
+    width:90%;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    margin: 0px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+
+
+hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border-top: 1px solid #aaaaaa;
+}
+
+.break {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox {
+    margin: 2% 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.textbox-half {
+    margin: 2% 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+
+.illustration {
+    width: 80%;
+    margin: 5% auto;
+}
+
+
+.about {
+  height: 100%;
+}
+
+.target-audience {
+  height: 100%;
+}
+
+
+.visuals {
+  height: 100%;
+}
+
+.process {
+    flex-direction: column;
+    height: 100%;
+}
+
+.design {
+  height: 100%;
+}
+
+.feature-1 {
+  flex-direction: column;
+  height: 100%;
+}
+
+.feature-2 {
+  flex-direction: column;
+  height: 100%;
+}
+
+.feature-3 {
+  flex-direction: column;
+  height: 100%;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #EDEDED;
+    letter-spacing: .1875em;
+    color: #3ACCB0;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 22.5em;
+    padding: 3em 0;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Dosis', sans-serif;
+    color: darkgrey;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 66px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+p{
+    font-size: 14px;
+}
+.section{
+  background-color: white;
+}
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .sign-up,
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 50%;
+  }
+    h1 {
+    font-size: 68px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+.section{
+  background-color: white;
+}
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .navbar {
+    width: 960px;
+  }
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 33.3%;
+  }
+  .header {
+    height: 400px;
+  }
+  .about,
+  .target-audience {
+    width: 50%;
+  }
+    .textbox-half {
+    margin: 4% 10%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .page {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .navbar {
+    width: 1200px;
+  }
+  .textbox-half {
+    margin: 4% 10%;
+  }
+}
